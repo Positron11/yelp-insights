@@ -16,8 +16,8 @@
 
 - **Is open:** `is_open` boolean
 
-  > [!NOTE]
-  > Figure out when `is open` refers to
+> [!NOTE]
+> Figure out when `is open` refers to
 
 - **Attributes:** `attributes` object containing attributes as either simple key/value or objects e.g. `"Parking": { "garage": false, "street": true, ... }` etc.
 
@@ -27,29 +27,43 @@
 
 ### `checkin`
 
-- **ID:** `business_id` [*ref. `business`*]
+- **ID:** `business_id` (UID string) [*ref. `business`*]
+
 - **Dates:** `date` string of comma-separated `YYYY-MM-DD HH:MM:SS`-formatted date strings for each checkin at this business
 
 ### `review`
  
  Review data including user_id that wrote the review and business_id for the review is for.
 
-- **Review ID:** `review_id`(22 character unique review string)
+- **Review ID:** `review_id`(UID string)
 
-- **User ID:** `user_id` (22 character unique review string)
+- **User ID:** `user_id` (UID string)
 
-- **Business ID:** `business_id` (22 character unique review string)
+- **Business ID:** `business_id` (UID string)
 
 - **Rating:** `stars` integer rating given by the user for the business
 
-- **Date:** `date` when the review is given. Format- `YYYY-MM-DD` (string)
+- **Date:** `date` when the review is given. Formatted as `YYYY-MM-DD` (string)
 
-- **Review:** `text` the review itself in text
+- **Review:** `text` the review text
 
 - **Votes:** `useful` + `funny` + `cool`  number of votes received for the review in the given categories (integer)
 
-
 ### `tip`
+
+From Yelp:
+
+> Tips are a way to pass along some key information about a business
+
+- **User ID:** `user_id` (UID string) [*ref. `user`*]
+
+- **Business ID:** `business_id` (UID string) [*ref. `business`*]
+
+- **Text:** `text` stores text of the tip 
+
+- **Date:** `YYYY-MM-DD`-formated `date` field
+
+- **Compliment count:** `compliment_count` integral 
 
 ### `user`
 
