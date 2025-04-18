@@ -35,20 +35,19 @@
  
  Review data including user_id that wrote the review and business_id for the review is for.
 
-- **Review ID:** `review_id`(22 character unique review string)
+- **Review ID:** `review_id`(UID string)
 
-- **User ID:** `user_id` (22 character unique review string)
+- **User ID:** `user_id` (UID string)
 
-- **Business ID:** `business_id` (22 character unique review string)
+- **Business ID:** `business_id` (UID string)
 
 - **Rating:** `stars` integer rating given by the user for the business
 
-- **Date:** `date` when the review is given. Format- `YYYY-MM-DD` (string)
+- **Date:** `date` when the review is given. Formatted as `YYYY-MM-DD` (string)
 
-- **Review:** `text` the review itself in text
+- **Review:** `text` the review text
 
 - **Votes:** `useful` + `funny` + `cool`  number of votes received for the review in the given categories (integer)
-
 
 ### `tip`
 
@@ -56,7 +55,7 @@ From Yelp:
 
 > Tips are a way to pass along some key information about a business
 
-- **User ID:** `user_id` (UID string) [*ref. `business`*]
+- **User ID:** `user_id` (UID string) [*ref. `user`*]
 
 - **Business ID:** `business_id` (UID string) [*ref. `business`*]
 
