@@ -16,8 +16,8 @@
 
 - **Is open:** `is_open` boolean
 
-  > [!NOTE]
-  > Figure out when `is open` refers to
+> [!NOTE]
+> Figure out when `is open` refers to
 
 - **Attributes:** `attributes` object containing attributes as either simple key/value or objects e.g. `"Parking": { "garage": false, "street": true, ... }` etc.
 
