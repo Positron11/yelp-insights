@@ -27,11 +27,26 @@
 
 ### `checkin`
 
-- **ID:** `business_id` [*ref. `business`*]
+- **ID:** `business_id` (UID string) [*ref. `business`*]
+
 - **Dates:** `date` string of comma-separated `YYYY-MM-DD HH:MM:SS`-formatted date strings for each checkin at this business
 
 ### `review`
 
 ### `tip`
+
+From Yelp:
+
+> Tips are a way to pass along some key information about a business
+
+- **User ID:** `user_id` (UID string) [*ref. `business`*]
+
+- **Business ID:** `business_id` (UID string) [*ref. `business`*]
+
+- **Text:** `text` stores text of the tip 
+
+- **Date:** `YYYY-MM-DD`-formated `date` field
+
+- **Compliment count:** `compliment_count` integral 
 
 ### `user`
