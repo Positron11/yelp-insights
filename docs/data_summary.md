@@ -66,3 +66,43 @@ From Yelp:
 - **Compliment count:** `compliment_count` integral 
 
 ### `user`
+
+Data related to user including their friend mapping.
+
+- **ID:** `user_id` (UID string)
+
+- **Name:** `name` user's first name (string)
+
+- **Review Count:** `review_count` number of reviews the user has written (integer)
+
+- **Yelp user since:** `yelping_since` date since when the user joined yelp (string, `YYYY-MM-DD`)
+
+- **Friends:** `friends` array containing `user_id` of user's friends (array of strings)
+
+- **Votes:** `useful` + `funny` + `cool` total number of votes of each type which the user has gathered (`integer`)
+
+- **Fans:** `fans` number of fans the user has (`integer`)
+
+- **Elite:** `elite` array containing the years when the user was elite (array of integers)
+
+> [!NOTE] 
+> Does 'elite' mean a subscriber of some sort?
+
+- **Average Stars:** `average_stars` average rating of all the reviews (`float`)
+
+- **Compliments:** `compliment_hot`
+  - `compliment_more`
+  - `compliment_profile`
+  - `compliment_cute` 
+  - `compliment_list`
+  - `compliment_note`
+  - `compliment_plain`
+  - `compliment_cool`
+  - `compliment_funny`
+  - `compliment_write`
+  - `compliment_photos`
+
+  Number of the particular kinds of compliments received by the user   (`integer`)
+
+> [!NOTE]
+> What do profile, cute, note, plain, write compliments mean>
