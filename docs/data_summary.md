@@ -4,26 +4,26 @@
 
 ### `business`
 
-- **ID:** `business_id`
+- **ID:** `business_id` (UID string)
 
 - **Name:** `name`
 
-- **Full address:** `address` + `city` + `state` + `postal code`
+- **Full address:** `address` + `city` + `state` (2 char. state code) + `postal code` strings
 
-- **Geoposition:** `latitude` + `longitude`
+- **Geoposition:** `latitude` + `longitude` floats
 
-- **Popularity:** `stars` + `review count`
+- **Popularity:** `stars` (float, rounded to half stars) + `review count` (integer)
 
-- **Is open:** `is_open` 
+- **Is open:** `is_open` boolean
 
   > [!NOTE]
   > Figure out when `is open` refers to
 
-- **Attributes:** `attributes` oject containing attributes as either simple key/value or objects e.g. `"Parking": { "garage": false, "street": true, ... }` etc.
+- **Attributes:** `attributes` object containing attributes as either simple key/value or objects e.g. `"Parking": { "garage": false, "street": true, ... }` etc.
 
-- **Categories:** `categories` list of restaurant types X falls under
+- **Categories:** `categories` list of named restaurant types X falls under
 
-- **Hours:** `hours` objects with key/value pairs for per-day open hours
+- **Hours:** `hours` object containing key/value pairs for per-day open hours, e.g. `"Monday": "10:00-21:00"`
 
 ### `checkin`
 
