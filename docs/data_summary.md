@@ -31,6 +31,23 @@
 - **Dates:** `date` string of comma-separated `YYYY-MM-DD HH:MM:SS`-formatted date strings for each checkin at this business
 
 ### `review`
+ 
+ Review data including user_id that wrote the review and business_id for the review is for.
+
+- **Review ID:** `review_id`(22 character unique review string)
+
+- **User ID:** `user_id` (22 character unique review string)
+
+- **Business ID:** `business_id` (22 character unique review string)
+
+- **Rating:** `stars` integer rating given by the user for the business
+
+- **Date:** `date` when the review is given. Format- `YYYY-MM-DD` (string)
+
+- **Review:** `text` the review itself in text
+
+- **Votes:** `useful` + `funny` + `cool`  number of votes received for the review in the given categories (integer)
+
 
 ### `tip`
 
